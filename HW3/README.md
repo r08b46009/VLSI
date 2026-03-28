@@ -85,4 +85,4 @@ The script compiles the program, runs the selected testcase, and then invokes th
 ## Notes
 
 - The smallest dead-space ratio for which this implementation can produce a legal result within the required runtime is `0.1`.
-- Example floorplan screenshots are provided in the `Floorplan print` folder.
+- Example floorplan screenshots are provided in the `Floorplan` folder.
