@@ -46,7 +46,7 @@ For each cell, the algorithm:
 - places the cell into a cluster,
 - merges overlapping clusters when necessary.
 
-After legalization, the final cell positions are snapped to row/site locations and written to the output placement file.
+After legalization, the final cell positions are snapped to row locations and written to the output placement file.
 
 ## Optimization Strategies
 
