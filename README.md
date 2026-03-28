@@ -1,4 +1,4 @@
-# VLSI CAD Projects
+# VLSI Physical Design Projects
 
 This repository collects my course projects in VLSI physical design automation, with an emphasis on algorithm design for floorplanning and placement legalization.
 
