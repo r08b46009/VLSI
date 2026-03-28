@@ -1,10 +1,7 @@
 CXX := g++
-CXXFLAGS := -std=c++11 -O3 -Wall -Wextra
+CXXFLAGS := -std=c++11 -O3 -Wall -Wextra -pedantic
 LIBS := -lm
 EXEC := ../bin/hw4
-SRC_DIRS := Legalizer\
-			Parser\
-			
 SRCS := main.cpp abacus.cpp Parser.cpp
 OBJS := $(SRCS:.cpp=.o)
 DEPS := $(OBJS:.o=.d)
@@ -12,6 +9,7 @@ DEPS := $(OBJS:.o=.d)
 all: $(EXEC)
 
 $(EXEC): $(OBJS)
+	@mkdir -p ../bin
 	$(CXX) $(LIBS) -o $@ $^
 
 %.o: %.cpp
@@ -41,7 +39,7 @@ endif
 
 test: $(EXEC)
 	@echo test on $(TESTCASE_NAME)
-	./$(EXEC) ../testcase/$(TESTCASE_NAME)/$(AUX_FILENAME).aux
+	./$(EXEC) ../testcase/$(TESTCASE_NAME)/$(AUX_FILENAME).aux ../output/$(AUX_FILENAME).result
 	../verifier/verify ../testcase/$(TESTCASE_NAME)/$(AUX_FILENAME).aux ../output/$(AUX_FILENAME).result
 
 .PHONY: all clean test
