@@ -1,20 +1,24 @@
 #pragma once
+
 #include "Data.hpp"
-#include <fstream>
-#include <sstream>
+
 #include <string>
 #include <vector>
-using namespace std;
 
-class Parser
-{
-    public:
-    string nodeFile, plFile, sclFile;
-    int maxDisplacement;
-    vector<Cell *> cells, terminals;
-    vector<Row *> rows;
-
-    void read(string const &filename);
+class Parser {
+public:
     Parser() : maxDisplacement(0) {}
-    LegalizerInput *parse(char argv[]);
+
+    LegalizerInput* parse(const char* auxPath);
+
+private:
+    std::string nodeFile;
+    std::string plFile;
+    std::string sclFile;
+    int maxDisplacement;
+    std::vector<Cell*> cells;
+    std::vector<Cell*> terminals;
+    std::vector<Row*> rows;
+
+    void read(const std::string& filename);
 };
