@@ -1,28 +1,19 @@
 #pragma once
+
 #include "Data.hpp"
 
-class abacus
-{
-    public:
-    
+class Abacus {
+public:
+    explicit Abacus(LegalizerInput* input) : input_(input), previousBestCost_(0.0) { AbacusLegalize(); }
 
-    void Abacus();
-    LegalizerInput *input;
-    int findrow(Cell const *cell);
-    int findsubrow(Row const *row, Cell const *cell);
+    void AbacusLegalize();
+    int findRow(const Cell* cell);
+    int findSubRow(const Row* row, const Cell* cell);
+    int placeRow(int rowIdx, Cell* cell);
+    void placeRowFinal(int rowIdx, int subRowIdx, Cell* cell);
+    double cost(const Cell* cell);
 
-    int placerow(int const &rowIdx, Cell *cell);
-    void placeRowFinal(int const &rowIdx, int const &subRowIdx, Cell *cell);
-    double cost(Cell const *cell);
-
-
-
-    abacus(LegalizerInput *input) : input(input) {
-
-        Abacus();
-
-    }
+private:
+    LegalizerInput* input_;
+    double previousBestCost_;
 };
-
-
-
