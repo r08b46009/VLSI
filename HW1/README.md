@@ -43,7 +43,7 @@ One reported best result used:
 ## Screenshots
 
 ### Best result layout
-![Best result layout]([[images/best_result.png](https://github.com/r08b46009/VLSI/blob/main/HW1/figures/HW1.png)]
+![Best result layout](https://github.com/r08b46009/VLSI/blob/main/HW1/figures/HW1.png)
 ## Disclaimer
 This repository contains my own write-up and selected results.
 Course-distributed assignment specifications and provided design bundles are not included.
