@@ -12,7 +12,7 @@ The experiment focuses on how different settings affect implementation quality, 
 - total wirelength
 
 ## Task Summary
-The original coursework asked students to complete the P&R flow in Innovus, optimize timing/area, compare congestion-driven and timing-driven placement, explain filler-cell insertion, and report slack, area, wirelength, and DRC results. :contentReference[oaicite:2]{index=2}
+The original coursework asked students to complete the P&R flow in Innovus, optimize timing or area, compare congestion-driven and timing-driven placement, explain filler-cell insertion, and report slack, area, wirelength, and DRC results. 
 
 ## My Experimental Settings
 - Clock period: 2.5
