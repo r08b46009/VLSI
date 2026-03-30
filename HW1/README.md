@@ -24,7 +24,7 @@ The original coursework asked students to complete the P&R flow in Innovus, opti
 According to my report:
 - Increasing utilization from 0.96 to 0.99 reduced total chip area.
 - Congestion-driven and timing-driven placement showed trade-offs in slack and wirelength.
-- Filler cells were inserted after routing to help maintain continuity and physical completeness. :contentReference[oaicite:3]{index=3}
+- Filler cells were inserted after routing to help maintain continuity and physical completeness. 
 
 ## Best Result
 One reported best result used:
@@ -32,7 +32,7 @@ One reported best result used:
 - timing-driven: off
 - slack: 0.02
 - total cell area: 39213.082
-- total wirelength: 280461.3675 :contentReference[oaicite:4]{index=4}
+- total wirelength: 280461.3675
 
 ## Repository Contents
 - `report/` — my report PDF
