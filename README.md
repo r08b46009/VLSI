@@ -22,5 +22,6 @@ This repository collects my course projects in VLSI physical design automation, 
 
 ## Repository Structure
 
+- `HW1/` - placement and routing with Cadence Innovus
 - `HW3/` — fixed-outline floorplanning
 - `HW4/` — standard-cell placement legalization
